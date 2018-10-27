@@ -1,0 +1,55 @@
+repo: 'flexing-your-muscles'
+canvasCourse: 'web-dev-1'
+
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - css
+  - border-box
+  - body-margin-0
+  - img-block-100
+
+html:
+  - path: 'index.html'
+    outline: false
+    has:
+      - 'img[src="images/facebook.svg"][alt="Facebook"]'
+      - 'img[src="images/instagram.svg"][alt="Instagram"]'
+      - 'img[src="images/youtube.svg"][alt="YouTube"]'
+      - 'footer.footer > nav.links > h2 + ul > li:nth-child(4) > a[href]'
+      - 'footer > ul.social:nth-child(3) > li:nth-child(3) > a > img'
+      - 'footer small:last-child'
+    search:
+      - 'Products'
+      - 'Vegan Protein Bars'
+      - 'Vegan Protein Blends'
+      - 'Vitamins &amp; supplements'
+      - 'Herbs &amp; remedies'
+      - 'Company'
+      - 'About'
+      - 'Franchises'
+      - 'Locations'
+      - 'Contact'
+      - '© Protein Power House'
+
+css:
+  - path: 'css/main.css'
+    has:
+      - ['.footer', 'display', 'flex']
+      - ['.footer', 'align-items', 'center']
+      - ['.footer h2', ['margin-top', 'margin-bottom']]
+      - ['.footer ul', 'list-style-type', 'none']
+      - ['.footer a', 'color']
+      - ['.links', 'padding', '0 1rem']
+      - ['.social', 'margin-left', 'auto']
+      - ['.social > li', 'width', '3em']
+      - ['.copyright', 'padding', '0 1rem']
+    search:
+      - '#8bc9d9'
+      - '#005e76'
+      - '#003442'
+
+screenshots:
+  - path: 'index.html'
+    sizes: [960]
